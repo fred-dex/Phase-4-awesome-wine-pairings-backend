@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   delete "/logout", to: "reviews#destroy"
   resources :cuisines, only: [:index, :show]
   resources :reviews, only: [:create, :index, :show, :destroy]
+  resources :pairings, only: [:index, :create] 
 end
