@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :wines, only: [:index, :show]
-  resources :winos, only: [:index, :create]
+  resources :winos, only: [:index, :create, :destroy]
   post "/signup", to: "winos#create"
   get "/me", to: "winos#show"
   post "/login", to: "reviews#create"
   delete "/logout", to: "reviews#destroy"
   resources :cuisines, only: [:index, :show]
-  resources :reviews, only: [:create, :index, :show, :destroy]
-  resources :pairings, only: [:index, :create] 
+  resources :reviews, only: [:index, :show, :create, :update, :destroy]
+  resources :pairings, only: [:create] 
 end

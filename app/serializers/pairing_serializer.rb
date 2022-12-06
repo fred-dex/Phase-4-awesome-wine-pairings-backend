@@ -1,5 +1,5 @@
 class PairingSerializer < ActiveModel::Serializer
-  attributes :id, :force
+  attributes :id
   belongs_to :cuisine 
   belongs_to :wine
 end
