@@ -1,0 +1,2 @@
+module WinoHelper
+end
