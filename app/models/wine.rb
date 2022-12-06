@@ -1,3 +1,3 @@
 class Wine < ApplicationRecord
-    belongs_to :cuisine
+    belongs_to :cuisines
 end
