@@ -1,5 +1,4 @@
 class WineSerializer < ActiveModel::Serializer
-  a  attributes :id, :name, :style, 
-  belongs_to :cuisine
-  has_many :pairings
+  attributes :id, :name, :type, :wine_style, :image
+
 end
