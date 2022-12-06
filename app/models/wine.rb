@@ -1,3 +1,4 @@
 class Wine < ApplicationRecord
-    belongs_to :cuisine
+    has_many :pairings
+    has_many :reviews, through: :pairings
 end

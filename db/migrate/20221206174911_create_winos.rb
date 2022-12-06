@@ -6,6 +6,7 @@ class CreateWinos < ActiveRecord::Migration[7.0]
       t.string :date_of_birth
       t.string :password
       t.integer :phone_number
+      
       t.timestamps
     end
   end

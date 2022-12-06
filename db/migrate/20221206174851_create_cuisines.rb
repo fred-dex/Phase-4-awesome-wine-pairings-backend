@@ -4,6 +4,7 @@ class CreateCuisines < ActiveRecord::Migration[7.0]
       t.string :type
       t.string :dish
       t.string :image
+
       t.timestamps
     end
   end

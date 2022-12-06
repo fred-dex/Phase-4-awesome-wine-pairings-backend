@@ -5,6 +5,7 @@ class CreateWines < ActiveRecord::Migration[7.0]
       t.string :type
       t.string :wine_style
       t.string :image
+
       t.timestamps
     end
   end
