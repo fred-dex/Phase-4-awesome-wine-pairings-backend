@@ -1,3 +1,3 @@
 class CuisineSerializer < ActiveModel::Serializer
-  attributes :id, :name, :dish
+  attributes :id, :origin, :dish, :image
 end

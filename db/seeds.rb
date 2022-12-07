@@ -9,63 +9,48 @@ puts "🌱 Seeding spices..."
 
 Wino.destroy_all
 Wine.destroy_all
-Cuisine.destroy_alloods
+Cuisine.destroy_all
 Review.destroy_all
 
-puts "Creating wino..."
-    wino1 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino2 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino3 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino4 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino4 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino5 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino6 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino7 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino8 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino8 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino9 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino10 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino11 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino12 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino13 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino14 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino15 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino16 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino17 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino18 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino19 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-    wino20 = Wino.create(name: "John", email: "johndoe@gmail.com", birthday: "1990-01-01", phone_number: 25472528)
-end
+# puts "Creating wino..."
+#     wino1 = Wino.create(username: "John234", email: "johndoe1@gmail.com", password = "winelover1", birthday: "1990-01-02", phone_number: 25472528)
+#     wino2 = Wino.create(username: "John213", email: "johndoe2@gmail.com", password = "winelover2", birthday: "1990-02-03", phone_number: 25472528)
+#     wino3 = Wino.create(username: "John857", email: "johndoe3@gmail.com", password = "winelover3", birthday: "1990-03-04", phone_number: 25472528)
+#     wino4 = Wino.create(username: "John192", email: "johndoe4@gmail.com", password = "winelover4", birthday: "1990-04-05", phone_number: 25472528)
+#     wino4 = Wino.create(username: "John093", email: "johndoe5@gmail.com", password = "winelover5", birthday: "1990-05-06", phone_number: 25472528)
+#     wino5 = Wino.create(username: "John123", email: "johndoe6@gmail.com", password = "winelover6", birthday: "1990-06-07", phone_number: 25472528)
+#     wino6 = Wino.create(username: "John342", email: "johndoe7@gmail.com", password = "winelover7", birthday: "1990-07-09", phone_number: 25472528)
+  
 
 puts "Creating wines..."
-    wines1 = Wines.create(name: "Red Bordeaux", type: "Red Wine", wine_style: "Rich and Bold", regions_id: 1)
-    wines2 = Wines.create(name: "Red Burgundy", type: "Red Wine", wine_style: "Light and Delicate", regions_id: 2)
-    wines3 = Wines.create(name: "White Burgundy", type: "Red Wine", wine_style: "Rich and Complex", regions_id: 8)
-    wines4 = Wines.create(name: "Northern Rhone", type: "Red Wine", wine_style: "Earthy and Spicy", regions_id: 3)
-    wines5 = Wines.create(name: "Alsace White", type: "Red Wine", wine_style: "Rich and Bold", regions_id: 4)
-    wines5 = Wines.create(name: "Mosel Riesling", type: "Red Wine", wine_style: "Off-Dry and Fruity", regions_id: 9)
-    wines6 = Wines.create(name: "Chianti Classico", type: "Red Wine", wine_style: "Rich and Bold", regions_id: 5)
-    wines7 = Wines.create(name: "Barolo", type: "Red Wine", wine_style: "Rich and Bold", region_id: 6)
-    wines8 = Wines.create(name: "Taurasi", type: "Red Wine", wine_style: "Rich and Bold", regions_id: 7)
-    wines9 = Wines.create(name: "Napa Cabernet", type: "Red Wine", wine_style: "Rich and Bold", regions_id: 10)
-end
+    wines1 = Wine.create(name: "Red Bordeaux", wine_style: "Rich and Bold", image: '')
+    wines2 = Wine.create(name: "Red Burgundy", wine_style: "Light and Delicate", image: '')
+    wines3 = Wine.create(name: "White Burgundy", wine_style: "Rich and Complex", image: '')
+    wines4 = Wine.create(name: "Northern Rhone", wine_style: "Earthy and Spicy", image: '')
+    wines5 = Wine.create(name: "Alsace White", wine_style: "Rich and Bold", image: '')
+   
 
-    puts "Creating reviews..."
-    review1 = Review.create(cuisine: "Chinese", dish: "Chicken Lo Mein", wines_id: 5, content: "This pairing was awesome!.", rating: 5)
-    review2 = Review.create(cuisine: "Thai", dish: "Shrimp Curry", wines_id: 3, content: "This pairing was so-so!", rating: 3.5)
-    review3 = Review.create(cuisine: "Japanese", dish: "Spicy Tuna Roll", wines_id: 5, content: "Tuna with Rielsing Rock!", rating: 5)
-    review4 = Review.create(cuisine: "Italian", dish: "Chicken Parmesan", wines_id: 6, content: "This pairing was awesome!", rating: 4)
-    review5 = Review.create(cuisine: "Chinese", dish: "Peking Duck", wines_id: 1, content: "This pairing was awesome!", rating: 5)
-    review6 = Review.create(cuisine: "French", dish: "Steak Frites", wines_id: 2, content: "This pairing was awesome!.", rating: 2.5)
-    review7 = Reviews.create(cuisine: "American", dish: "Bacon Cheeseburger", wines_id: 5 content: "This pairing was awesome!.", rating: 5)
-    review8 = Review.create(cuisine: "American", dish: "Pepperoni Pizza", wines_id: 6, content: "This pairing was awesome!.", rating: 5)
-    review9 = Review.create(cuisine: "Indian", dish: "Lamb Biryani", wines_id: 4, content: "This pairing was awesome!.", rating: 5)
-    end
+puts "Creating reviews..."
+    review1 = Review.create(title: 'Yum', content: "This pairing was awesome!.", rating: 5)
+    review2 = Review.create(title: 'Did not like', content: "This pairing was so-so!", rating: 3.5)
+    review3 = Review.create(title: 'Loved it', content: "This pairing was great!", rating: 5)
+    review4 = Review.create(title: 'Very good', content: "This pairing was awesome!", rating: 4)
+    review5 = Review.create(title: 'Best ever', content: "This pairing was awesome!", rating: 5)
+    review6 = Review.create(title: 'Meh', content: "This pairing was mediocre!.", rating: 2.5)
+    review7 = Review.create(title: 'Yuck', content: "This pairing was bad!.", rating: 1)
+    review8 = Review.create(title: 'Ugh', content: "This pairing was bad!.", rating: 2)
+    review9 = Review.create(title: 'Yes!', content: "This pairing was awesome!.", rating: 5)
+    
 
 
 puts "Creating cuisines..."
+cuisine1 = Cuisine.create(origin: 'Chinese', dish: 'Peking Duck', image: '')
+cuisine2 = Cuisine.create(origin: 'Chinese', dish: 'Hot and sour soup', image: '')
+cuisine3 = Cuisine.create(origin: 'Italian', dish: 'Spaghetti Bolognese', image: '')
+cuisine4 = Cuisine.create(origin: 'Italian', dish: 'Lasagna', image: '')
+cuisine5 = Cuisine.create(origin: 'French', dish: 'Steak Frites', image: '')
+cuisine6 = Cuisine.create(origin: 'French', dish: 'Salmon En Papillote.', image: '')   
 
-    end
-end 
+
 
 puts "✅ Done seeding!"
