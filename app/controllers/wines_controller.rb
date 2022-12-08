@@ -1,5 +1,7 @@
 class WinesController < ApplicationController
-    
+rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response   
+
     def index
         wines = Wine.all
         render json: wines
@@ -19,5 +21,14 @@ class WinesController < ApplicationController
 
     def cuisine_params
         params.permit(:name, :wine_style, :image)
+    end
+
+    def render_not_found_response
+        render json: { error: "Wine not found" }, status: :not_found
+    end
+    
+
+    def render_unprocessable_entity_response(exception)
+        render json: { errors: exception.record.errors.full_messages }, status: :unprocessable_entity
     end
 end

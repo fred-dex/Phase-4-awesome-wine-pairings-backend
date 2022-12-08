@@ -11,9 +11,19 @@ class WinosController < ApplicationController
       render json: @current_wino
     end
   
+
+    def destroy
+      user = Wino.find(params[:id])
+      user.destroy
+      head :no_content
+    end
+
+
     private
   
     def wino_params
-      params.permit(:winoname, :password, :password_confirmation)
+      params.permit(:username, :password, :email, :date_of_birth, :phone_number)
     end
+
+  
 end
